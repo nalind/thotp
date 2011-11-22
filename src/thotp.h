@@ -14,7 +14,7 @@ enum thotp_alg {
 };
 
 int thotp_base32_parse(const char *base32, struct thotp_blob **blob);
-int thotp_base32_unparse(struct thotp_blob **blob, char **base32);
+int thotp_base32_unparse(struct thotp_blob *blob, char **base32);
 int thotp_hotp(struct thotp_blob *key,
 	       enum thotp_alg algorithm, uint64_t counter, int digits,
 	       char **code);
