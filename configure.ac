@@ -1,5 +1,5 @@
 AC_INIT(thotp,0.0)
-AM_INIT_AUTOMAKE([foreign])
+AM_INIT_AUTOMAKE([foreign subdir-objects])
 AC_PROG_CC
 AC_LANG_C
 AC_PROG_RANLIB
